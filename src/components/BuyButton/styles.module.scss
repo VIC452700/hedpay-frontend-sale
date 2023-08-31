@@ -1,0 +1,14 @@
+.buyButtonRoot {
+  @apply
+  tw-text-default
+  xs:tw-text-lg
+  tw-font-bold
+  xs:tw-p-[15px]
+  tw-text-base
+  tw-p-[8px];
+}
+
+.disabled {
+  @apply tw-opacity-50
+  tw-pointer-events-none;
+}

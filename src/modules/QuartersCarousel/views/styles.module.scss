@@ -1,0 +1,28 @@
+.quartersViewRoot {
+  @apply
+  tw-py-8
+  tw-bg-white
+}
+
+.queryAssets {
+  & > :last-child {
+    @apply
+    tw-text-black
+  }
+  & > :first-child {
+    position: relative;
+    margin-top: 16px;
+    text-indent: -8px;
+  }
+  @apply
+  xs:tw-text-base
+  tw-text-sm
+  tw-font-bold
+  tw-flex
+  xs:tw-ml-16
+  tw-mx-8
+  2xs:tw-gap-8
+  2xs:tw-flex-row
+  tw-flex-col
+  tw-text-[#0475c8]
+}

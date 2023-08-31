@@ -1,0 +1,84 @@
+.capBarRoot {
+  @apply
+  tw-w-full
+  tw-my-8
+}
+
+.capBar {
+  & > div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      height: 10px;
+      width: 1px;
+      left: 50%;
+      position: absolute;
+      width: 1px;
+      
+      @apply
+      tw-bg-primary-dark
+      tw-top-[-40%]
+    }
+
+    & > span {
+      @apply
+      2xs:tw-block
+      tw-hidden
+    }
+
+    @apply
+    tw-absolute
+    tw-top-full
+    tw-translate-x-[-50%]
+    tw-translate-y-[8px]
+    tw-text-primary-dark
+    xs:tw-text-sm
+    tw-text-xxs
+    tw-flex
+    tw-gap-[4px]
+  }
+
+  & > div:first-child {
+    @apply
+    tw-left-[17%]
+  }
+
+  & > div:nth-child(2) {
+    @apply
+    tw-left-[42%]
+  }
+
+  & > div:nth-child(3) {
+    @apply
+    tw-left-[67%]
+  }
+
+  & > div:last-child {
+    @apply
+    tw-left-[92%]
+  }
+
+  &::before {
+    content: '';
+    height: calc(100% - 4px);
+    position: absolute;
+    width: var(--pseudo-before-width);
+    @apply
+    tw-bg-primary
+    tw-rounded-[20px]
+  }
+
+  @apply
+  tw-border-[1px]
+  tw-rounded-[16px]
+  tw-p-[2px]
+  tw-border-primary
+  2xs:tw-h-[14px]
+  tw-h-[12px]
+  tw-relative
+  tw-w-full
+  tw-bg-white
+  tw-relative
+}

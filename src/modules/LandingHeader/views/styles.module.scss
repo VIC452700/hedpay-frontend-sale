@@ -1,0 +1,70 @@
+.landingHeaderRoot {
+  @apply
+  tw-bg-bg-gradient
+}
+
+.landingHeaderContent {
+  & > div {
+    @apply
+    tw-w-full
+  }
+  & > div:last-child {
+    @apply
+    tw-w-full
+    tw-flex
+    lg:tw-flex-col
+    md:tw-flex-row
+    tw-flex-col
+    tw-gap-6
+    lg:tw-my-6
+  }
+  
+  @apply
+  tw-flex
+  lg:tw-flex-row
+  tw-flex-col
+  lg:tw-gap-16
+  tw-gap-8
+}
+
+.growingLayerByLayer {
+  & > :nth-child(1) {
+    @apply
+    tw-opacity-20
+  }
+  & > :nth-child(2) {
+    @media screen and (min-width: 1280.98px) {
+      width: 96% !important;
+    }
+
+    @apply
+    tw-opacity-20
+    lg:tw-rounded-b-none
+  }
+
+  & > :nth-child(3) {
+    @media screen and (min-width: 1280.98px) {
+      width: 92% !important;
+    }
+    
+    @apply
+    lg:tw-rounded-b-none
+    lg:tw-border
+  }
+
+  @apply
+  tw-w-full
+  tw-flex
+  lg:tw-flex-col-reverse
+  tw-flex-col
+  lg:tw-gap-0
+  tw-gap-3
+  tw-items-center;
+}
+
+.activePhase {
+  & > :nth-child(4) {
+    @apply
+    tw-text-negative;
+  }
+}

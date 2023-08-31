@@ -1,0 +1,31 @@
+.textFieldRoot {
+  border-radius: 15px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+  &.warned {
+    @apply tw-outline-negative;
+  }
+
+  &:focus {
+    &.warned {
+      @apply tw-outline-negative;
+    }
+    @apply tw-outline-2
+    tw-outline-primary;
+  }
+
+  @apply xs:tw-text-base
+  xs:tw-px-5
+  tw-outline-1
+  tw-outline-primary
+  tw-w-full
+  tw-px-3
+  tw-py-2
+  tw-text-sm
+  tw-font-bold
+  hover:tw-outline-2
+  tw-bg-[#ffffff10]
+  tw-text-white
+}

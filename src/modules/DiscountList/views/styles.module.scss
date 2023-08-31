@@ -1,0 +1,10 @@
+.discountListViewRoot {
+  @apply
+  tw-flex
+  tw-flex-col
+  tw-items-end
+  tw-gap-3
+  tw-w-full
+  md:tw-max-w-none
+  tw-max-w-[740px]
+}

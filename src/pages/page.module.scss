@@ -1,0 +1,147 @@
+.dashboardRoot {
+}
+
+.sellBoard {
+  & > div > :first-child {
+    @apply
+    tw-absolute
+    tw-w-full
+    tw-left-0
+    tw-top-8
+  }
+  background: url("../assets/icons/white-logo.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+  }
+  background-position: 0 60%;
+  @apply
+  tw-relative
+  tw-overflow-hidden
+}
+
+.purchasePanel {
+  & > :first-child {
+    flex-grow: 1;
+  }
+
+  & > :last-child {
+    @apply
+    tw-order-first
+    md:tw-order-none
+  }
+  @apply
+  xs:tw-mt-[104px]
+  tw-mt-[70px]
+  tw-flex
+  xs:tw-gap-8
+  tw-gap-4
+  tw-flex-col
+  tw-justify-center
+  tw-items-center
+  md:tw-flex-row
+  tw-items-center
+}
+
+.rotatedIcon {
+  animation: slideDown 3s ease-in-out infinite !important;
+  @apply
+  tw-origin-right
+  tw-rotate-180
+}
+
+.splashIcon {
+  scale: 3;
+  animation: slideUp 3s ease-in-out infinite;
+  @apply
+  tw-absolute
+  tw-translate-x-[-50%]
+  tw-translate-y-[-50%]
+}
+
+.loadingText {
+  top: calc(50% - 60px);
+  animation: fade 3s ease-in-out infinite;
+  @apply
+  tw-absolute
+  tw-left-[50%]
+  tw-text-white
+  tw-text-xl
+  tw-translate-x-[-50%]
+  tw-translate-y-[-50%]
+}
+
+@keyframes fade {
+  0% {
+    @apply
+    tw-opacity-0
+  }
+  30% {
+    @apply
+    tw-opacity-100
+  }
+  70% {
+    @apply
+    tw-opacity-100
+  }
+  100% {
+    @apply
+    tw-opacity-0
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: calc(45% + 18px);
+    @apply
+    tw-opacity-0
+    tw-left-[55%]
+  }
+  30% {
+    top: calc(50% + 18px);
+    @apply
+    tw-opacity-100
+    tw-left-[50%]
+  }
+  70% {
+    top: calc(50% + 18px);
+    @apply
+    tw-opacity-100
+    tw-left-[50%]
+  }
+  100% {
+    top: calc(45% + 18px);
+    @apply
+    tw-opacity-0
+    tw-left-[55%]
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: calc(55% - 18px);
+    @apply
+    tw-opacity-0
+    tw-left-[45%]
+  }
+  20% {
+    top: calc(50% - 18px);
+    @apply
+    tw-opacity-100
+    tw-left-[50%]
+  }
+  70% {
+    top: calc(50% - 18px);
+    @apply
+    tw-opacity-100
+    tw-left-[50%]
+  }
+  100% {
+    top: calc(55% - 18px);
+    @apply
+    tw-opacity-0
+    tw-left-[45%]
+  }
+}
+

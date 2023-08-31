@@ -1,0 +1,137 @@
+.purchaseViewRoot {
+  border-radius: 13px;
+
+  & label {
+    @apply
+    xs:tw-text-sm
+    tw-text-base
+    tw-font-bold
+    tw-block
+    tw-text-white
+    xs:tw-mb-[15px]
+    tw-mb-[8px]
+  }
+
+  @apply
+  tw-flex
+  tw-flex-col
+  xs:tw-gap-6
+  tw-w-full
+  tw-gap-4
+  tw-p-4
+  xs:tw-max-w-[540px]
+  tw-text-base
+  tw-text-white
+}
+
+.resultRow {
+  & > * {
+    width: 100%;
+  }
+
+  @apply tw-flex
+  tw-gap-[15px]
+  tw-flex-col
+  2xs:tw-flex-row;
+}
+
+.usdtAmountRow {
+  & > * {
+    &:first-child {
+      @apply tw-mb-[15px]
+      xs:tw-m-0;
+    }
+
+    @apply xs:tw-w-[50%]
+    tw-w-full;
+  }
+
+  & > :not(:first-child) {
+    & > * {
+      @apply tw-w-full;
+    }
+
+    &::after {
+      content: "Price based on phase discount value";
+      @apply
+      tw-absolute
+      tw-translate-y-7
+      tw-translate-x-6
+      tw-text-xs
+    }
+
+    &::before {
+      content: "";
+      @apply
+      tw-w-1
+      tw-h-1
+      tw-absolute
+      tw-translate-y-5
+      tw-translate-x-2
+      tw-bg-primary
+      tw-rounded-[50%];
+    }
+
+    @apply tw-flex
+    2xs:tw-gap-[15px]
+    tw-gap-[12px]
+    tw-items-end
+  }
+
+  @apply xs:tw-flex
+  2xs:tw-gap-[15px]
+  tw-gap-[12px]
+  tw-items-end
+  tw-block
+  xs:tw-mb-3
+  tw-mb-8
+}
+
+label.smallLabel {
+  @apply
+  tw-text-sm
+  tw-font-regular
+}
+
+.tabButton {
+  & p {
+    width: 50%;
+
+    @apply tw-text-center
+    tw-bg-primary
+    tw-rounded-[8px]
+    xs:tw-p-[7px]
+    tw-p-[4px];
+  }
+
+  @apply xs:tw-text-base
+  tw-font-bold
+  tw-border-[1px]
+  tw-border-[#F5F3F330]
+  tw-rounded-[8px]
+  tw-text-sm;
+}
+
+.hdpToUsdt {
+  @apply
+  tw-bg-teal-gradient
+  tw-text-lg
+  tw-font-bold
+  tw-rounded-[13px]
+  tw-px-8
+  xs:tw-py-2
+  tw-py-1
+  tw-text-default
+}
+
+.totalSum {
+  @apply
+  tw-bg-teal-gradient
+  tw-text-lg
+  tw-font-bold
+  tw-rounded-[13px]
+  tw-px-8
+  xs:tw-py-2
+  tw-py-1
+  tw-text-default
+}

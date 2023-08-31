@@ -1,0 +1,40 @@
+.timerRoot {
+  & > span {
+    &:nth-of-type(odd) {
+      font-weight: 300;
+      line-height: 180px;
+
+      @apply
+      sm:tw-text-[80px]
+      2xs:tw-text-[60px]
+      tw-text-[40px]
+      sm:tw-leading-[120px]
+      2xs:tw-leading-[90px]
+      tw-leading-[60px]
+      tw-opacity-100
+      tw-block
+      2xs:tw-mx-0
+      tw-mx-2
+      tw-font-spaceMono
+    }
+
+    @apply
+    tw-text-sm
+    tw-text-xxs
+    sm:tw-leading-[30px]
+    2xs:tw-leading-[20px]
+    tw-leading-[10px]
+    2xs:tw-block
+    tw-hidden
+  }
+
+  @apply tw-text-primary-dark
+  tw-flex
+  tw-justify-start
+  sm:tw-leading-[120px]
+  2xs:tw-leading-[90px]
+  tw-leading-[60px]
+  sm:tw-text-[40px]
+  2xs:tw-text-[30px]
+  tw-font-thin
+}

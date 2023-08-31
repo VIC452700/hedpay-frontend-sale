@@ -1,0 +1,93 @@
+.phaseDetailRoot {
+  & > div {
+    & > .phaseNumber {
+      & > :first-child {
+        @apply
+        tw-font-bold
+        md:tw-text-md
+        lg:tw-text-2xl
+        tw-text-base
+        tw-text-positive
+      }
+
+      & > :last-child {
+        @apply
+        tw-text-xs
+        tw-font-regular
+      }
+    }
+    
+    & > div:nth-child(2) {
+      @media screen and (width <= 1680px) {
+        @apply
+        tw-flex-col
+        tw-items-center
+        tw-gap-2
+      }
+      @apply
+      tw-flex
+      tw-gap-8
+    }
+
+    & .tokenSupply {
+      @apply
+      tw-font-bold
+      md:tw-text-base
+      lg:tw-text-md
+      tw-text-base
+    }
+
+    & .description {
+      @apply
+      tw-font-regular
+      xs:tw-text-md
+      tw-text-base
+      xs:tw-block
+      tw-hidden
+    }
+
+    & .tokenPrice {
+      & > :first-child {
+        @apply
+        xs:tw-text-xl
+        lg:tw-text-2xl
+        tw-font-semi-bold
+        tw-text-md
+        tw-text-positive
+      }
+
+      & > :last-child {
+        @apply
+        xs:tw-text-sm
+        tw-font-regular
+        tw-text-xs
+      }
+      @apply
+      
+      tw-text-right
+    }
+
+    & .phaseDetail {
+      @apply
+      tw-max-w-[400px]
+      tw-text-xs
+      tw-text-default
+      tw-font-bold
+      md:tw-block
+      tw-hidden
+    }
+
+    @apply
+    tw-text-black
+    tw-rounded-[20px]
+    tw-bg-white
+    tw-flex
+    tw-items-center
+    tw-justify-between
+    tw-select-none
+  }
+  @apply
+  tw-bg-white
+  tw-border-none
+  tw-py-4
+}

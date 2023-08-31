@@ -1,0 +1,100 @@
+.phaseWrapperRoot {
+  & > div:first-child {
+    @apply xs:tw-w-[30px]
+    xs:tw-h-[30px]
+    tw-w-[24px]
+    tw-h-[24px]
+    tw-bg-white
+    tw-flex
+    tw-items-center
+    tw-justify-center
+    tw-rounded-[50%]
+    tw-font-semi-bold
+    lg:tw-col-span-1
+    md:tw-col-span-2
+    sm:tw-col-span-1
+    tw-col-span-2
+    lg:tw-row-span-1
+    md:tw-row-span-2
+    sm:tw-row-span-1
+    tw-row-span-2
+    tw-row-span-2;
+  }
+
+  & > div:nth-of-type(2) {
+    & > :not(:last-child) {
+      @apply tw-mr-[8px];
+    }
+
+    & > span:nth-child(2) {
+      @apply tw-text-primary-dark
+      tw-font-regular;
+    }
+    @apply tw-font-bold
+    lg:tw-col-span-4
+    md:tw-col-span-5
+    sm:tw-col-span-4
+    tw-col-span-8
+    tw-justify-self-start;
+  }
+
+  & > span:nth-child(3) {
+    @apply
+    tw-font-extra-bold
+    lg:tw-col-span-2
+    md:tw-col-span-5
+    sm:tw-col-span-2
+    tw-col-span-2
+    lg:tw-justify-self-center
+    tw-justify-self-end
+  }
+
+  & > span:nth-child(4) {
+    @apply tw-bg-white
+    md:tw-w-full
+    md:tw-max-w-[180px]
+    md:tw-min-w-[110px]
+    tw-min-w-[100px]
+    tw-text-center
+    tw-rounded-[16px]
+    tw-font-bold
+    lg:tw-col-span-2
+    md:tw-col-span-5
+    sm:tw-col-span-2
+    tw-col-span-5
+  }
+
+  & > span:last-child {
+    @apply
+    lg:tw-col-span-3
+    md:tw-col-span-5
+    sm:tw-col-span-3
+    tw-col-span-5
+    md:tw-text-sm
+    tw-text-xs
+    tw-justify-self-end
+  }
+
+  @apply xs:tw-py-4
+  xs:tw-px-[20px]
+  tw-py-2
+  tw-px-3
+  tw-grid
+  tw-items-center
+  tw-w-full
+  tw-rounded-[18px]
+  tw-grid-cols-12
+  lg:tw-grid-rows-1
+  md:tw-grid-rows-2
+  sm:tw-grid-rows-1
+  tw-grid-rows-2
+  tw-space-y-2
+  tw-space-x-2
+  tw-font-semi-bold
+  tw-bg-teal-gradient
+  tw-border-2
+  2xs:tw-text-base
+  tw-text-sm
+  tw-border-primary
+  lg:tw-min-w-[560px]
+}

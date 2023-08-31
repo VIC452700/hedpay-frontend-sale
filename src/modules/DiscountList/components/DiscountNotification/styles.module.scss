@@ -1,0 +1,180 @@
+.discountNotificationRoot {
+  & > :first-child {
+    & > :not(:first-child) {
+      @apply tw-mr-[12px];
+    }
+
+    & > :first-child {
+      @apply
+      2xs:tw-mr-[30px]
+      tw-mr-2
+    }
+
+    @apply tw-flex;
+  }
+
+  & .phase {
+    @apply xs:tw-text-base
+    tw-font-semi-bold
+    tw-text-xs
+    tw-rounded-[50%]
+    tw-bg-white
+    tw-w-[30px]
+    tw-h-[30px]
+    tw-flex
+    tw-items-center
+    tw-justify-center;
+  }
+
+  & .textTo {
+    @apply
+    tw-text-primary-dark
+    tw-font-regular;
+  }
+
+  & .discountLabel {
+    @apply
+    lg:tw-inline
+    md:tw-hidden
+    tw-inline
+  }
+
+  &::after {
+    content: " ";
+
+    @apply
+    tw-bg-teal-gradient
+    tw-absolute
+    tw-w-full
+    tw-h-full
+    tw-z-[-1]
+    tw-left-0
+    tw-duration-300;
+  }
+
+  &:hover::after {
+    @apply
+    tw-opacity-50
+    tw-w-[200%]
+  }
+
+  &.disabled {
+    @apply tw-opacity-20
+    tw-pointer-events-none;
+  }
+
+  & .discountPercentage {
+    @apply
+    tw-text-[#0475C8]
+    tw-text-base
+    tw-font-bold;
+  }
+
+  &:nth-child(1) {
+    & .discountPercentage {
+      @apply
+      sm:tw-text-[24px]
+      tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[70%]
+  }
+
+  &:nth-child(2) {
+    & .discountPercentage {
+      @apply
+      sm:tw-text-[26px]
+      tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[75%]
+  }
+
+  &:nth-child(3) {
+    & .discountPercentage {
+        @apply
+        sm:tw-text-[28px]
+        tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[80%]
+  }
+
+  &:nth-child(4) {
+    & .discountPercentage {
+        @apply
+        sm:tw-text-[30px]
+        tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[85%]
+  }
+
+  &:nth-child(5) {
+    & .discountPercentage {
+        @apply
+        sm:tw-text-[32px]
+        tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[90%]
+  }
+
+  &:nth-child(6) {
+    & .discountPercentage {
+        @apply
+        sm:tw-text-[34px]
+        tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[95%]
+  }
+
+  &:nth-child(7) {
+    & .discountPercentage {
+        @apply
+        sm:tw-text-[36px]
+        tw-text-base
+    }
+    @apply
+    tw-w-full
+    xs:tw-w-[100%]
+  }
+
+  &.invisible {
+    @apply
+    tw-opacity-0
+    tw-translate-x-[100%]
+  }
+
+  &.visible {
+    @apply
+    tw-opacity-100
+    tw-translate-x-0
+  }
+
+  @apply
+  tw-text-black
+  xs:tw-rounded-[20px]
+  2xs:tw-rounded-[16px]
+  tw-rounded-[12px]
+  xs:tw-py-[16px]
+  xs:tw-px-[24px]
+  tw-text-base
+  tw-font-bold
+  tw-flex
+  tw-items-center
+  tw-justify-between
+  tw-select-none
+  tw-cursor-pointer
+  tw-p-[12px]
+  tw-relative
+  tw-overflow-hidden
+  tw-duration-[1s]
+}

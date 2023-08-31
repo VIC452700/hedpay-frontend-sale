@@ -1,0 +1,123 @@
+.modalRoot {
+  & > div {
+    @apply tw-w-full
+    tw-h-full
+    tw-flex
+    tw-justify-center
+    tw-items-center;
+  }
+  background-color: rgba(0, 0, 0, 0.6);
+  @apply tw-fixed
+  tw-top-0
+  tw-left-0
+  tw-right-0
+  tw-bottom-0
+  tw-z-[89]
+  tw-animate-fadeIn
+}
+
+.show {
+  @apply tw-block;
+}
+
+.hidden {
+  @apply tw-hidden;
+}
+
+.modal {
+  & h2 {
+    letter-spacing: 8px;
+    @apply tw-text-3xl
+    tw-font-bold;
+  }
+  @apply tw-bg-[#142850]
+  tw-text-white
+  tw-w-[30%]
+  tw-min-w-[380px]
+  tw-h-[420px]
+  tw-rounded-[24px]
+  tw-z-[4]
+  tw-relative
+  tw-flex
+  tw-flex-col
+  tw-items-center
+  tw-justify-between
+  tw-gap-8
+  tw-p-[30px];
+}
+
+.spin {
+  @apply tw-absolute
+  tw-left-[50%]
+  tw-top-[40%]
+  tw-translate-x-[-50%]
+  tw-translate-y-[-50%]
+  tw-w-[25%];
+}
+
+.detail {
+  & span {
+    @apply
+    tw-font-bold
+    tw-mr-2
+    tw-text-primary
+  }
+  @apply tw-flex-grow
+  tw-flex
+  tw-flex-col
+  tw-gap-1
+  lg:tw-text-md
+  tw-text-base
+  tw-justify-end
+  tw-font-bold;
+}
+
+.disabled {
+  @apply tw-pointer-events-none
+  tw-opacity-60;
+}
+
+.buttonsWrapper {
+  & > div {
+    &:hover {
+      @apply tw-opacity-80;
+    }
+    &:active {
+      @apply tw-opacity-90;
+    }
+    @apply tw-text-lg
+    tw-bg-primary
+    tw-py-4
+    tw-w-full
+    tw-text-center
+    
+    tw-font-semi-bold
+    tw-cursor-pointer
+    tw-select-none
+    tw-rounded-[16px];
+  }
+  @apply tw-flex
+  tw-w-full
+  tw-gap-4;
+}
+
+.confirmed {
+  @apply tw-text-4xl
+  tw-text-primary
+  tw-font-bold
+  tw-mb-[20%];
+}
+
+.close {
+  &:hover {
+    @apply tw-opacity-60;
+  }
+  &:active {
+    @apply tw-opacity-80;
+  }
+  @apply tw-absolute
+  tw-w-[24px]
+  tw-right-4
+  tw-top-4
+  tw-opacity-40;
+}

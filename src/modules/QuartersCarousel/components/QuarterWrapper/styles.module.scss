@@ -1,0 +1,59 @@
+.quaterWrapperRoot {
+  & .quaterWrapperHeader {
+    & > p:first-child {
+      @apply tw-text-xs
+      ;
+    }
+
+    & > p:last-child {
+      & > span {
+        color: #6883a4;
+
+        @apply tw-font-thin;
+      }
+      @apply tw-font-extra-bold
+      tw-text-2xl
+      ;
+    }
+    @apply tw-bg-teal-gradient
+    tw-p-[20px]
+    tw-rounded-[6px];
+  }
+
+  & .quaterWrapperBody {
+    & span {
+      @apply tw-font-bold;
+    }
+
+    & > p:last-child {
+      @apply 2xs:tw-block
+      tw-hidden;
+    }
+    @apply tw-text-sm
+    
+    tw-p-[20px]
+    tw-leading-[23px];
+  }
+
+  & p {
+    @apply 2xs:tw-max-w-[265px];
+  }
+
+  & img {
+    &:last-child {
+      @apply 2xs:tw-hidden
+      tw-block
+      tw-w-[60px]
+      tw-top-10;
+    }
+    @apply tw-absolute
+    tw-top-0
+    tw-right-8
+    2xs:tw-block
+    tw-hidden;
+  }
+  @apply tw-bg-white
+  tw-w-full
+  tw-select-none
+  tw-p-[15px];
+}

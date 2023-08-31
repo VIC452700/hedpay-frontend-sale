@@ -1,0 +1,81 @@
+.mainHeaderRoot {
+  & > div {
+    &::after {
+      background: linear-gradient(109.63deg, #f4f4f400 4.61%, #94f4f4 20%, #42a7c1 96.52%);
+      content: "";
+      @apply tw-w-0
+      tw-h-1
+      tw-absolute
+      tw-top-full
+      tw-right-[50%]
+      tw-duration-1000;
+    }
+
+    &::before {
+      background: linear-gradient(109.63deg, #42a7c1 4.61%, #94f4f4 80%, #f4f4f400 96.52%);
+      content: "";
+      @apply tw-w-0
+      tw-h-1
+      tw-absolute
+      tw-top-full
+      tw-left-[50%]
+      tw-duration-1000;
+    }
+
+    & .mainHeaderLogo {
+      & img:first-child {
+        display: none;
+      }
+
+      & img:last-child {
+        display: block;
+      }
+      @apply tw-w-[181px]
+    tw-h-[35px]
+    xs:tw-w-[362px]
+    xs:tw-h-[70px];
+    }
+
+    &.pageNotTop {
+      &::after {
+        @apply tw-w-[49%];
+      }
+
+      &::before {
+        @apply tw-w-[49%];
+      }
+
+      & img:first-child {
+        display: block;
+      }
+
+      & img:last-child {
+        display: none;
+      }
+      @apply
+      xs:tw-px-[32px]
+      xs:tw-py-[8px]
+      tw-px-[24px]
+      tw-py-[8px]
+      tw-bg-white
+      tw-duration-1000;
+    }
+
+    @apply
+    tw-flex
+    tw-items-center
+    tw-justify-between
+    tw-sticky
+    tw-top-0
+    xs:tw-px-20
+    xs:tw-py-8
+    tw-p-[24px]
+    tw-bg-background
+  }
+  @apply
+  tw-sticky
+  tw-top-0
+  xs:tw-h-[134px]
+  tw-h-[84px]
+  tw-z-[2]
+}

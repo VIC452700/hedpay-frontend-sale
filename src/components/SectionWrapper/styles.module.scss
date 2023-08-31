@@ -1,0 +1,15 @@
+.sectionWrapperRoot {
+  & > div {
+    @apply
+    tw-w-full
+    tw-max-w-[1280px]
+    tw-mx-auto;
+  }
+  @apply
+  tw-w-full
+  tw-py-16
+  xs:tw-px-6
+  tw-px-2
+  tw-border-y-[2px]
+  tw-border-primary
+}

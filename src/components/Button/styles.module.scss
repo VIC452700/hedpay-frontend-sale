@@ -1,0 +1,14 @@
+.buttonRoot {
+  @apply tw-rounded-[10px]
+  tw-bg-primary
+  tw-flex
+  tw-items-center
+  tw-justify-center
+  tw-font-bold
+  xs:tw-text-base
+  tw-text-sm
+  tw-cursor-pointer
+  hover:tw-opacity-[0.7]
+  active:tw-opacity-[0.8]
+  tw-select-none;
+}
